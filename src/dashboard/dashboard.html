@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!-- ...................bootstrap css...................... -->
+
+     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+     <!-- <script
+     src="https://code.jquery.com/jquery-3.4.1.min.js"
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" type="text/css" href="../../external-lib/bootstrap/js/bootstrap.js">  -->
+     <link rel="stylesheet" type="text/css" href="../../external-lib/bootstrap/css/bootstrap.css">
+    
+     <link rel="stylesheet" type="text/css" href="dashboard.css">
+
+     <script src=" https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+      <script src="./dashboard.js"></script>
+      <script src="https://kit.fontawesome.com/23839e4874.js" crossorigin="anonymous"></script>
+ 
+</head>
+<body onload="onLoad()">
+    
+    <nav class="navbar navbar-expand-md  my-top-nav my-nav bg-faded sticky-top">
+        <a href="/" class="navbar-brand ml-2">CatPro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar5">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Projects
+                    </a>
+                    <div class="dropdown-menu my-drpdwn-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+            </ul>
+            <form class="mx-2 my-auto d-inline w-75">
+                <div class="input-group">
+                    <input type="text" class="form-control  border border-right-0" placeholder="Search...">
+                    <span class="input-group-append">
+                        <button class="btn btn-outline-secondary border border-left-0" type="button">
+                            <img src="../../assets/search.png"/>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown ml-4">
+                    <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../../assets/setting1.png"/>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right my-drpdwn-menu"  aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown ml-4">
+                    <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../../assets/account1.png"/>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right my-drpdwn-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- <button type="button" class="btn btn-outline-light">Light</button> -->
+
+    <div class="d-flex h-100 ">
+        <nav class="navbar w-25 h-100 my-nav my-side-navbar d-flex flex-column  justify-content-start ">
+
+            <div class="w-75 mb-4  mt-5">
+              <button  type="button" class="btn my-side-navbar-btn btn-outline-light my-btn btn-block">  
+                  <span >
+                  <!-- <img   class="mr-2 mb-1 my-edit-icon" src="../../assets/edit1.png" /> -->
+                  <!-- <i class="fas fa-pen-fancy"></i> -->
+                  <i class="fas fa-pencil-alt mr-2"></i>
+                </span  ><p id ="newproject" style="display: inline;">New Project</p></button>
+            </div>
+            <div class="w-75 mb-4">
+              <button id="my-workspace" type="button" onclick="myWorkSpaces()" class="btn  my-side-navbar-btn btn-outline-light my-btn btn-block"><p id="my-workspaces" style="display: inline;">My Workspaces</p></button>
+            </div>  
+             <div class="w-75 mb-4">
+              <button type="button" onclick="myGroups()" class="btn my-side-navbar-btn btn-outline-light my-btn btn-block">Groups</button>
+            </div>  
+              <div class="w-75 mb-4">
+              <button type="button" onclick="myTrash()" class="btn my-side-navbar-btn btn-outline-light my-btn btn-block">Trash</button>
+            </div>
+      
+      
+            <div class="w-75  my-logout">
+              
+              <button type="button" class="btn btn-outline-light my-side-navbar-btn my-btn btn-block">Logout</button>
+            </div>
+            
+           
+            
+            </nav>
+            <div id="my-dashboard-container" class="w-100 my-dashboard-container" >
+                
+
+            </div>
+    </div>
+   
+      
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> -->
+
+
+   
+    <script src=" https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- <script src="./dashboard.js"></script> -->
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

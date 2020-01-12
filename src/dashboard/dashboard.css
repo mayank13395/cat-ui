@@ -1,0 +1,121 @@
+/* html {
+    overflow: scroll;
+    overflow-x: hidden;
+} */
+
+
+
+.my-nav {
+    background-color: #2E5878;
+    /* background-color: #267DFF; */
+    /* color: white; */
+}
+
+.my-top-nav { 
+
+    border-bottom:1px solid #fff;
+}
+
+body {
+    /* color: white; */
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.my-nav > li >a, .my-nav a {
+    color: white;
+}
+
+.my-drpdwn-menu >a {
+    color: #000;
+}
+
+
+
+.my-btn {
+    border-radius: 10px;
+}
+
+
+.my-logout {
+    margin-top: 100%;
+}
+
+.my-side-navbar-btn:hover {
+    color: #2E5878 !important;
+
+}
+
+.my-side-navbar-btn:focus {
+    background-color: #fff !important;
+    color: #2E5878 !important;
+    border: 1px solid #2E5878;
+    box-shadow: none;
+
+}
+
+.my-dashboard-container {
+    /* overflow: hidden; */
+    overflow-y: auto;
+     /* width: 0 !important ; */
+   
+}
+/* .my-dashboard-container::-webkit-scrollbar { 
+    /* width: 0 !important ;
+    background: transparent; */
+    /* display: none; */
+/* } */ */
+
+
+.my-edit-icon :hover :focus{
+    color: #000;
+
+}
+
+
+/* ...............................screens between 768px and 1200px.......................... */
+
+@media screen and (max-width: 1600px) 
+{
+
+/* your imports */
+/* @import url('/css/styles1.css');
+@import url('/css/styles2.css'); */
+
+.my-logout {
+       margin-top: 70%;
+}
+
+}
+
+/* ............................groups css................................... */
+
+.my-groups-row {
+    height: 10% !important;
+}
+
+.my-group-hr {
+    
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    
+
+}
+
+
+.my-colaborators {
+    align-items: center;
+}
+
+.my-groups {
+    align-items: center;
+}
+
+.my-groups-heading-underline {
+    border-top: 1px solid #2E5878;
+}
