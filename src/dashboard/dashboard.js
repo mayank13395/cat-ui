@@ -71,6 +71,7 @@ if (matchMedia) {
     
     // media query change
     function WidthChange(mq) {
+        
     if (mq.matches) {
     // window width is at least 500px
     console.log("changed text for this screen");
