@@ -76,3 +76,15 @@ input[type="text"]:focus {
 input::placeholder {
     font-size: 12px;
 }
+
+ 
+/* ..........................For screens max width 1000px.............. */
+
+@media screen and (min-width: 1000px) 
+{
+
+    .my-login-form {
+        margin-top: 30% !important;
+    }
+
+}

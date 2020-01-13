@@ -1,0 +1,47 @@
+.my-show-all-activities {
+    font-size: 13px;
+}
+
+.my-btn {
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.my-version-details {
+
+    border: 1px solid ;
+}
+
+
+
+
+/* ...................d3js css.............................  */
+
+.node {
+    cursor: pointer;
+  }
+  
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  
+  .node text {
+    font: 10px sans-serif;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+
+  .node circle :focus  {
+    fill: rgb(189, 186, 39) !important;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+

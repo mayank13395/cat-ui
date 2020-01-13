@@ -92,7 +92,7 @@ body {
 /* ............................groups css................................... */
 
 .my-groups-row {
-    height: 10% !important;
+    height: 8% !important;
 }
 
 .my-group-hr {
@@ -118,4 +118,34 @@ body {
 
 .my-groups-heading-underline {
     border-top: 1px solid #2E5878;
+}
+
+
+/* ..............................group details cs.............................. */
+
+
+.my-group-details {
+    /* margin-top: 10% !important; */
+}
+
+.my-edit-workspace-btn , .my-delete-workspace-btn {
+    background-color: #2E5878;
+    color: #fff;
+    /* border-color: 1px ; */
+
+}
+
+
+.my-edit-workspace-btn:hover {
+    
+    color: #fff;
+    /* border-color: 1px ; */
+
+}
+
+.my-delete-workspace-btn:hover {
+    
+    color: #fff;
+    /* border-color: 1px ; */
+
 }
